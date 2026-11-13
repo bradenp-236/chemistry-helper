@@ -386,7 +386,7 @@ set_site_information(
              "Drafter documentation: https://drafter-edu.github.io/drafter/"],
     planning=["Braden_Price_-_CS1_Final_Project_0__Pick_a_Problem.docx",
               "bradenp_udel_edu_-_CS1_Final_Project_1__Design__1_.docx"],
-    links=["https://github.com/bradenp-236/chemistry-helper"]
+    links=["https://github.com/bradenp-236/chemistry-helper/"]
 )
 hide_debug_information()
 start_server(State("", 0, [], ""))

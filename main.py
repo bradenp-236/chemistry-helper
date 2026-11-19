@@ -13,29 +13,13 @@ from drafter import *
 set_website_title("ChemCalc Lab Assistant")
 set_website_style("none")
 
-add_website_css("""
-    body {
-        background-color: #f4f8fb;
-        color: #243b53;
-        font-family: Arial, sans-serif;
-    }
+add_website_css("#drafter-body--", """
+    background-color: lightblue;
+""")
 
-    h1, h2, h3 {
-        color: #174a6e;
-    }
-
-    button {
-        background-color: #168b8b;
-        color: white;
-        border-radius: 8px;
-        padding: 10px;
-    }
-
-    input, select {
-        border: 1px solid #b9d5e5;
-        border-radius: 6px;
-        padding: 8px;
-    }
+add_website_css("#drafter-body-- button", """
+    background-color: teal;
+    color: white;
 """)
 
 

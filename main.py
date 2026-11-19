@@ -9,6 +9,33 @@ a history log of their results.
 from dataclasses import dataclass
 from drafter import *
 
+# Website styling
+set_website_title("ChemCalc Lab Assistant")
+set_website_theme("simple")
+
+add_website_css("body", """
+    background-color: #f4f8fb;
+    color: #243b53;
+    font-family: Arial, sans-serif;
+""")
+
+add_website_css("h1, h2, h3", """
+    color: #174a6e;
+""")
+
+add_website_css("button", """
+    background-color: #168b8b;
+    color: white;
+    border-radius: 8px;
+    padding: 10px;
+""")
+
+add_website_css("input, select", """
+    border: 1px solid #b9d5e5;
+    border-radius: 6px;
+    padding: 8px;
+""")
+
 
 # Average atomic masses in g/mol for common elements (a global constant)
 # used AI (found using Chemistry 2e (OpenStax)

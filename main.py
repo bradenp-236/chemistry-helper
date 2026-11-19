@@ -324,7 +324,7 @@ def yield_results(state: State, theoretical_grams: str,
 @route
 def history_log(state: State) -> Page:
     """Shows a table of every saved result and the average yield."""
-    rows = []
+    rows: list[list[Content]] = []
     for reaction in state.saved_reactions:
         rows.append([reaction.equation, reaction.limiting_reactant,
                      format_number(reaction.theoretical_yield_grams) + " g",
